@@ -1,0 +1,8 @@
+
+services:
+  taskmanager:
+    image: taskmanager:local
+    container_name: taskmanager-app
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
